@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>R'cade | The ultimate arcade-based website!</title>
+        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/slides.js"></script>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <audio id="beep" src="sounds/Beep1.wav"></audio>
+        <audio id="menu_nav" src="sounds/menu_nav.wav"></audio>
+        <audio id="back" src="sounds/back.wav"></audio>
+        <div id="startup" class ="section_title">
+            <div id="welcome">
+                <div id="welcome_title">Welcome!</div>
+                <div id="welcome_start" data-visibility="visible" data-next="menu">
+                    <div id="start"> > Press <span>Enter</span> to start</div>
+                </div>
+
+                <div id="market_stuff">
+                    TM & &copy 2018 Instituto Multimédia
+                    <br>
+                    All rights reserved
+                </div>
+            </div>
+        </div>
+
+        <div id="main" class="hidden">
+            <div id="main_title">R'cade</div>
+            <div id="main_content">
+                <div id="slider_name" class="section_title">1 Player</div>
+                
+                <div id="slider">
+                    <div class="slide">
+                        <div class="slide_img_container">
+                            <img class="slide_img" src="">
+                        </div>
+                        <div class="slide_name"></div>
+                    </div>
+
+                    <div class="slide" id="selected">
+                        <div class="slide_img_container">
+                            <img class="slide_img" src="">
+                        </div>
+                        <div class="slide_name"></div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_img_container">
+                            <img class="slide_img" src="">
+                        </div>
+                        <div class="slide_name"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="controls">
+                <div class="controls_section">
+                    <div class="cs_title">Navigate game</div>
+                    <div class="cs_command">
+                        <img class="arrow" id="left_arrow" src="img/arrow.png">
+                        <img class="arrow" id="right_arrow" src="img/arrow.png">
+                    </div>
+                </div>
+                <div class="controls_section">
+                    <div class="cs_title">Navigate playlists</div>
+                    <div class="cs_command">
+                        <img class="arrow" id="top_arrow" src="img/arrow.png">
+                        <img class="arrow" id="bottom_arrow" src="img/arrow.png">
+                    </div>
+                </div>
+                <div class="controls_section">
+                    <div class="cs_title">Game info</div>
+                    <div class="cs_command">
+                        <div>Press "I"</div>
+                    </div>
+                </div>
+                <div class="controls_section">
+                    <div class="cs_title">Download game</div>
+                    <div class="cs_command">
+                        <div>Press "D"</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="info" class="hidden">
+            <div id="info_title"></div>
+            <div id="info_content">
+                <div id="ic_img">
+                    <img src="img/pacman.jpg">
+                </div>
+                <div id="ic_desc"></div>
+            </div>
+            <div id="close_info">
+                Press <span>ESCAPE</span> to leave
+            </div>
+        </div>
+    </body>
+</html>
